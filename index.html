@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Pulse Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'bkg': 'hsl(var(--bkg))',
+              'content': 'hsl(var(--content))',
+              'primary': 'hsl(var(--primary))',
+              'primary-focus': 'hsl(var(--primary-focus))',
+              'primary-content': 'hsl(var(--primary-content))',
+              'secondary': 'hsl(var(--secondary))',
+              'secondary-focus': 'hsl(var(--secondary-focus))',
+              'secondary-content': 'hsl(var(--secondary-content))',
+              'accent': 'hsl(var(--accent))',
+              'accent-focus': 'hsl(var(--accent-focus))',
+              'accent-content': 'hsl(var(--accent-content))',
+              'neutral': 'hsl(var(--neutral))',
+              'neutral-focus': 'hsl(var(--neutral-focus))',
+              'neutral-content': 'hsl(var(--neutral-content))',
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-in-out',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+            }
+          },
+        },
+      };
+    </script>
+    <style type="text/css">
+        :root {
+            --bkg: 220 20% 96%;
+            --content: 220 15% 40%;
+            --primary: 250 60% 50%;
+            --primary-focus: 250 60% 45%;
+            --primary-content: 0 0% 100%;
+            --secondary: 220 60% 50%;
+            --secondary-focus: 220 60% 45%;
+            --secondary-content: 0 0% 100%;
+            --accent: 30 90% 55%;
+            --accent-focus: 30 90% 50%;
+            --accent-content: 0 0% 100%;
+            --neutral: 220 10% 20%;
+            --neutral-focus: 220 10% 15%;
+            --neutral-content: 220 10% 90%;
+        }
+        .dark {
+            --bkg: 220 15% 15%;
+            --content: 220 10% 70%;
+            --primary: 250 70% 60%;
+            --primary-focus: 250 70% 55%;
+            --primary-content: 0 0% 100%;
+            --secondary: 220 70% 60%;
+            --secondary-focus: 220 70% 55%;
+            --secondary-content: 0 0% 100%;
+            --accent: 30 95% 60%;
+            --accent-focus: 30 95% 55%;
+            --accent-content: 0 0% 0%;
+            --neutral: 220 10% 80%;
+            --neutral-focus: 220 10% 75%;
+            --neutral-content: 220 10% 10%;
+        }
+        .recharts-responsive-container {
+            min-height: 250px;
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@reduxjs/toolkit": "https://aistudiocdn.com/@reduxjs/toolkit@^2.9.0",
+    "react-redux": "https://aistudiocdn.com/react-redux@^9.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-bkg text-content font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

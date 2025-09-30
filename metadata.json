@@ -1,0 +1,5 @@
+{
+  "name": "Copy of Team Pulse Dashboard",
+  "description": "A productivity monitoring dashboard for internal teams, allowing Team Leads to monitor member statuses and assign tasks, and Team Members to update their status and task progress. Built with React, Redux Toolkit, and Tailwind CSS.",
+  "requestFramePermissions": []
+}
